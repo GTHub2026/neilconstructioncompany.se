@@ -497,6 +497,46 @@ textarea {
   font-size: 0.95rem;
 }
 
+.joke-section {
+  background: linear-gradient(135deg, #f8fafc 0%, #f5f0df 100%);
+}
+
+.joke-box {
+  max-width: 740px;
+  margin: 0 auto;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 2rem;
+  box-shadow: var(--soft-shadow);
+  text-align: center;
+}
+
+.joke-meta {
+  display: inline-block;
+  color: var(--gold-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.joke-text {
+  font-size: clamp(1.1rem, 2vw, 1.45rem);
+  line-height: 1.7;
+  color: var(--navy);
+  white-space: pre-line;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.joke-box .btn {
+  margin-top: 1.2rem;
+}
+
 .team-section {
   background: var(--light);
 }
@@ -740,6 +780,10 @@ textarea {
 
   .feature-list {
     grid-template-columns: 1fr;
+  }
+
+  .joke-box {
+    padding: 1.4rem;
   }
 }
 
